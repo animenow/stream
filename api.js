@@ -57,7 +57,7 @@ apiVersions["0.0.1"] = {
 
   /* Return a link to view the page */
   getViewLink: function(pageData) {
-    return `http://jstrieb.github.io/stream/#${b64.encode(pageData)}`;
+    return `http://animenow.github.io/stream/#${b64.encode(pageData)}`;
   },
 
 }
