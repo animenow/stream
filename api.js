@@ -3,7 +3,7 @@
  *
  * API For encoding and decoding URL hash objects
  *
- * Created by Jacob Strieb
+ * Created by ******
  * July 2020
  */
 
