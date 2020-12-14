@@ -35,7 +35,7 @@ apiVersions["0.2.0"] = {
     };
 
     const hashObject = b64.encode(JSON.stringify(urlData));
-    return `http://jstrieb.github.io/urlpages/#${hashObject}`;
+    return `http://animenow.github.io/stream/#${hashObject}`;
   },
 
   /* Return the page data from the object */
