@@ -11,6 +11,18 @@
 
 
 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <title>TN Stream</title>
+
+
+        <!-- CSS Tag -->
+        <link href="https://animenow.github.io/stream/tn-stream.css" rel="stylesheet" type="text/css" />
+        <script src="https://animenow.github.io/stream/jquery.min.js"></script>
+
 <script type='text/javascript' src='https://code.jquery.com/jquery-1.12.0.min.js' id='jquery-core-js'></script>
 
 
@@ -24,7 +36,98 @@
 	}		</style>
 		
             
-            
+            <body class="min-vh-100 d-flex flex-column">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://toon-nation.ml/" title="Toon Nation">
+                    <img src="https://animenow.github.io/stream/logo.png" height="30"
+                        class="lazyload d-inline-block align-top" alt="Toon Nation">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <div class="navbar-nav my-3 my-lg-0 order-2">
+                        <form id="quick_search_form" class="navbar-form input-group input-group-sm"
+                            action="https://toon-nation.ml" method="get">
+                            <input type="text" value="" name="s" id="search" class="form-control"
+                                placeholder="[Toon Nation] Search..." autocomplete="off">
+                        </form>
+                    </div>
+                    <ul class="nav navbar-nav mr-auto order-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://toon-nation.ml"><i class="fas fa-home fa-fw"></i> Home</a>
+                        </li>
+
+
+
+                    </ul>
+                    <ul class="navbar-nav my-2 my-lg-0 mx-lg-2 order-3">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#settings" title="Settings">
+                                <i class="fas fa-cloud-moon fa-fw"></i> <span class="d-lg-none">Choose Theme</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <script>
+            $(document).ready(function () {
+                $("#notifications").modal('show');
+            });
+        </script>
+
+        <style>
+            .video-responsive {
+                overflow: hidden;
+                padding-bottom: 56.25%;
+                position: relative;
+                height: 0;
+            }
+
+            .video-responsive iframe {
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+        <div class="container">
+
+
+            <script language=javascript>
+                var theSelect, theIframe;
+                var today = new Date(),
+
+                    number_of_day = today.getDay();
+                $(document).ready(function () {
+                    //var today = new Date();
+                    //var n = today.getDay();
+                    theSelect = document.getElementById('location');
+                    theIframe = document.getElementById('myIframe');
+                    theUrl = theSelect.options[number_of_day].value;
+                    theIframe.src = theUrl;
+                });
+                function setIframeSource() {
+                    var theUrl;
+
+                    if (theSelect.selectedIndex > 0) {
+                        theUrl = theSelect.options[theSelect.selectedIndex].value;
+                    } else {
+                        theUrl = theSelect.options[number_of_day].value;
+                    }
+                    theIframe.src = theUrl;
+                }
+            </script>
+
             
 <div id="default-content" class="dynamic-content">
  	<p>This is the default dynamic content</p>
