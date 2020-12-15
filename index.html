@@ -14,6 +14,7 @@
     <!-- CSS Tag -->
     <link href="https://animenow.github.io/stream/tn-stream.css" rel="stylesheet" type="text/css" />
     <script src="https://animenow.github.io/stream/jquery.min.js"></script>
+	<script type='text/javascript' src='https://code.jquery.com/jquery-1.12.0.min.js' id='jquery-core-js'></script>
 
 
 </head>
@@ -57,11 +58,7 @@
             </div>
         </div>
     </nav>
-    <script>
-        $(document).ready(function () {
-            $("#notifications").modal('show');
-        });
-    </script>
+    
 
     <style>
         .video-responsive {
@@ -80,8 +77,7 @@
             
         .dynamic-content {
     display:none;
-
-        }
+		
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -114,111 +110,54 @@
             }
         </script>
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script type="text/javascript">
-	// Parse the URL parameter
-	function getParameterByName(name, url) {
-	    if (!url) url = window.location.href;
-	    name = name.replace(/[\[\]]/g, "\\$&");
-	    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-	        results = regex.exec(url);
-	    if (!results) return null;
-	    if (!results[2]) return '';
-	    return decodeURIComponent(results[2].replace(/\+/g, " "));
-	}
-	// Give the parameter a variable name
-	var dynamicContent = getParameterByName('id');
- 
-	 $(document).ready(function() {
- 
-		// Check if the URL parameter is f5675gtd
-		if (dynamicContent == 'f5675gtd') {
-			$('#f5675gtd').show();
-		} 
+        <script type="text/javascript">
 		
+// Parse the URL parameter
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+// Give the parameter a variable name
+var dynamicContent = getParameterByName('dc');
+
+	jQuery(document).ready(function() {
+
+		// Check if the URL parameter is apples
+		if (dynamicContent == 'apples') {
+			jQuery('#apples').show();
+		} 
+		// Check if the URL parameter is oranges
+		else if (dynamicContent == 'oranges') {
+			jQuery('#oranges').show();
+		} 
+		// Check if the URL parameter is bananas
+		else if (dynamicContent == 'bananas') {
+			jQuery('#bananas').show();
+		} 
 		// Check if the URL parmeter is empty or not defined, display default content
 		else {
-			$('#default-content').show();
+			jQuery('#default-content').show();
 		}
-	});
-</script>
+	});	</script>
 
 
-
-<!-- Default Dynamic Section -->
 <div id="default-content" class="dynamic-content">
-  This is the default content
+ 	<p>This is the default dynamic content</p>
 </div>
-<!-- Dynamic Section 1 -->
-<div id="f5675gtd" class="dynamic-content">
- <div class="container">
-            <div class="card">
-                <div class="card-body">
-                    <div class="row ml-auto">
-                        <div class="mt-lg-0">
-                            <h5>Ben 10: Alien FOrce S01E01</h5>
-
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <br />
-
-        <form id="form1" method="post">
-            <select class="form-control" aria-label="Default select example" id="location" onchange="setIframeSource()">
-                <option value="">Default Player</option>
-                <option value="https://streamtape.com/e/dQ6Pqorl88tkLxm">Streamtape (720p)</option>
-                <option value="https://justvideo.me/video/Rqy2InZcJ4zERFH">MyCloud (MultiQuality)
-                </option>
-                <option value="https://ninjastream.to/watch/gLeZywEG4ArKN">NinjaStream</option>
-            </select>
-
-        </form>
-
-        <br />
-
-        <div class="video-responsive"><iframe id="myIframe" src="https://justvideo.me/video/Rqy2InZcJ4zERFH"
-                frameborder="0" marginwidth="0" marginheight="0" width="848" height="480" allowfullscreen
-                scrolling="no"></iframe></div>
-
-    </div>
-
-    <br />
-
-    <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <div class="row ml-auto">
-                    <div class="mt-lg-0">
-                        <h5>1080p - 325 MB</h5>
-
-                        <div>
-                            <a href="" class="btn btn-primary mt-1 mr-2 waves-effect waves-light" target="_blank">
-                                MEGA</a>
-                            <a href="" class="btn btn-primary mt-1 mr-2 waves-effect waves-light" target="_blank">
-                                Direct</a>
-                            <a href="" class="btn btn-primary mt-1 mr-2 waves-effect waves-light" target="_blank">
-                                Direct v2</a>
-                            <a href="" class="btn btn-primary mt-1 mr-2 waves-effect waves-light" target="_blank">
-                                GDrive</a>
-                            <a href="" class="btn btn-primary mt-1 mr-2 waves-effect waves-light" target="_blank">
-                                Prime Uploads</a>
-                            <a href="" class="btn btn-primary mt-1 mr-2 waves-effect waves-light" target="_blank">
-                                Users Drive</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
+<div id="apples" class="dynamic-content">
+	<p>I like apples</p>
 </div>
-
-    </div>
+<div id="oranges" class="dynamic-content">
+	<p>I like oranges</p>
+</div>
+<div id="bananas" class="dynamic-content">
+	<p>I like bananas</p>
+</div>
     </main>
     <div class="modal fade" id="settings" tabindex="-1" role="dialog" aria-labelledby="settingsLabel"
         aria-hidden="true">
