@@ -1,0 +1,107 @@
+
+		
+
+
+<script>
+function generateCode(form){
+
+//Header
+title = document.inputForm.title.value;
+justvideo = document.inputForm.justvideo.value;
+qandsinmb = document.inputForm.qandsinmb.value;
+mega = document.inputForm.mega.value;
+direct = document.inputForm.direct.value;
+primeuploads = document.inputForm.primeuploads.value;
+mirror = document.inputForm.mirror.value;
+
+
+
+output =
+'<div class="container"><div class="card"><div class="card-body"><div class="ml-auto row"><div class="mt-lg-0"><h5>\n' +
+((title) ? '' + title : '') +
+'</h5></div></div></div></div></div><br><div class="container"><div class="card"><div class="card-body"><div class="ml-auto row"><div class="mt-lg-0"><h5>Watch Online</h5><hr><a class="btn btn-primary mr-2 mt-1 waves-effect waves-light "href="\n' +
+((justvideo) ? '' + justvideo : '') +
+'"target="_blank">Just Video</a></div></div></div></div></div><br><div class="container"><div class="card"><div class="card-body"><div class="ml-auto row"><div class="mt-lg-0"><h5>Download</h5><hr><h5>\n' + 
+((qandsinmb) ? '' + qandsinmb : '') +
+'</h5><div><a class="btn btn-primary mr-2 mt-1 waves-effect waves-light"href="\n' +
+((mega) ? '' + mega : '') +
+'"target="_blank">MEGA</a> <a class="btn btn-primary mr-2 mt-1 waves-effect waves-light"href="\n' +
+((direct) ? '' + direct : '') +
+'"target="_blank">Direct</a> <a class="btn btn-primary mr-2 mt-1 waves-effect waves-light"href="\n' +
+((primeuploads) ? '' + primeuploads : '') +
+'"target="_blank">Prime Uploads</a> <a class="btn btn-primary mr-2 mt-1 waves-effect waves-light"href="\n' +
+((mirror) ? '' + mirror : '') +
+'"target="_blank">Mirror</a></div></div></div></div></div>\n' +
+
+
+'</div>';
+
+document.inputForm.source.value = output;
+
+return output;
+}
+
+function preview() {
+var htmlCode;
+htmlCode = generateCode();
+htmlCode = htmlCode.replace(/#/g,"%23");
+targetURL = "https://www.quackit.com/preview/preview.cfm?htmlCode=" + htmlCode;
+window.open(targetURL, "newWindow", "width=500,height=400,top=100,left=100,toolbar=no,menubar=no,location=no,scrollbars=yes");
+}
+
+
+</script>
+
+
+
+<form name="inputForm" id="inputForm" onchange="generateCode();">
+
+    <div class="codeGenerator"> 
+
+        <fieldset>
+            <legend>
+                <h2>Code Generator</h2>
+            </legend>
+
+            <div id="meta">
+                <label for="title" title="Episode Number">Series Title with Season or Episode Number</label>
+                    <input class="lg" name="title" type="text" maxlength="100">
+                    <hr>
+                    <label for="JustVideo" title="JustVideo Link">Just Video Link</label>
+                    <input class="lg" name="justvideo" type="text" maxlength="100">
+                    <hr>
+                    <label for="qandsinmb" title="Quality with Size in MB">Quality with Size:</label>
+                    <input class="lg" name="qandsinmb" type="text" maxlength="100">
+                    <hr>
+                    <label for="mega" title="Quality with Size in MB">Mega Link</label>
+                    <input class="lg" name="mega" type="text" maxlength="100">
+                    <hr>
+                    <label for="direct" title="Quality with Size in MB">Direct Link</label>
+                    <input class="lg" name="direct" type="text" maxlength="100">
+                    <hr>
+                    <label for="primeuploads" title="PrimeUploads Link">PrimeUploads Link</label>
+                    <input class="lg" name="primeuploads" type="text" maxlength="100">
+                    <hr>
+                    <label for="mirror" title="Mirror Link">Mirror Link</label>
+                    <input class="lg" name="mirror" type="text" maxlength="100">
+
+
+
+<fieldset>
+                <legend><h2>Generated HTML Code</h2></legend>
+                <div>
+                <p>Here's the HTML code that was generated.</p>
+                <textarea name="source" class="generatedCode" onclick="this.focus();this.select()"></textarea>
+                </div>
+                
+            </fieldset>
+            
+            
+            
+               
+        
+
+
+
+
+			
