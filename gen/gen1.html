@@ -1,4 +1,5 @@
 
+
 		
 
 
@@ -8,11 +9,12 @@ function generateCode(form){
 //Header
 title = document.inputForm.title.value;
 justvideo = document.inputForm.justvideo.value;
+mirror = document.inputForm.mirror.value;
 qandsinmb = document.inputForm.qandsinmb.value;
 mega = document.inputForm.mega.value;
 direct = document.inputForm.direct.value;
 primeuploads = document.inputForm.primeuploads.value;
-mirror = document.inputForm.mirror.value;
+gdrive = document.inputForm.gdrive.value;
 
 
 
@@ -21,7 +23,12 @@ output =
 ((title) ? '' + title : '') +
 '</h5></div></div></div></div></div><br><div class="container"><div class="card"><div class="card-body"><div class="ml-auto row"><div class="mt-lg-0"><h5>Watch Online</h5><hr><a class="btn btn-primary mr-2 mt-1 waves-effect waves-light "href="\n' +
 ((justvideo) ? '' + justvideo : '') +
-'"target="_blank">Just Video</a></div></div></div></div></div><br><div class="container"><div class="card"><div class="card-body"><div class="ml-auto row"><div class="mt-lg-0"><h5>Download</h5><hr><h5>\n' + 
+'"target="_blank">Just Video</a>\n' +
+'<a class="btn btn-primary mr-2 mt-1 waves-effect waves-light "href="\n' +
+((mirror) ? '' + mirror : '') +
+'"target="_blank">Mirror</a>\n' +
+'</div></div></div></div></div><br><div class="container"><div class="card"><div class="card-body"><div class="ml-auto row"><div class="mt-lg-0">\n' +
+'<h5>Download</h5><hr><h5>\n' + 
 ((qandsinmb) ? '' + qandsinmb : '') +
 '</h5><div><a class="btn btn-primary mr-2 mt-1 waves-effect waves-light"href="\n' +
 ((mega) ? '' + mega : '') +
@@ -30,8 +37,8 @@ output =
 '"target="_blank">Direct</a> <a class="btn btn-primary mr-2 mt-1 waves-effect waves-light"href="\n' +
 ((primeuploads) ? '' + primeuploads : '') +
 '"target="_blank">Prime Uploads</a> <a class="btn btn-primary mr-2 mt-1 waves-effect waves-light"href="\n' +
-((mirror) ? '' + mirror : '') +
-'"target="_blank">Mirror</a></div></div></div></div></div>\n' +
+((gdrive) ? '' + gdrive : '') +
+'"target="_blank">GDrive</a></div></div></div></div></div>\n' +
 
 
 '</div>';
@@ -64,13 +71,18 @@ window.open(targetURL, "newWindow", "width=500,height=400,top=100,left=100,toolb
             </legend>
 
             <div id="meta">
-                <label for="title" title="Episode Number">Series Title with Season or Episode Number</label>
+                <label for="title" title="Series Title with Season or Episode Number">Series Title with Season or Episode Number [Bey S01E01]</label>
                     <input class="lg" name="title" type="text" maxlength="100">
                     <hr>
                     <label for="JustVideo" title="JustVideo Link">Just Video Link</label>
                     <input class="lg" name="justvideo" type="text" maxlength="100">
+                    
+                     <hr>
+                    <label for="Mirror" title="Mirror Link">Mirror Link[Streamable]</label>
+                    <input class="lg" name="mirror" type="text" maxlength="100">
+                    
                     <hr>
-                    <label for="qandsinmb" title="Quality with Size in MB">Quality with Size:</label>
+                    <label for="qandsinmb" title="Quality with Size in MB" >Quality with Size:[480p - 70 MB]</label>
                     <input class="lg" name="qandsinmb" type="text" maxlength="100">
                     <hr>
                     <label for="mega" title="Quality with Size in MB">Mega Link</label>
@@ -82,8 +94,8 @@ window.open(targetURL, "newWindow", "width=500,height=400,top=100,left=100,toolb
                     <label for="primeuploads" title="PrimeUploads Link">PrimeUploads Link</label>
                     <input class="lg" name="primeuploads" type="text" maxlength="100">
                     <hr>
-                    <label for="mirror" title="Mirror Link">Mirror Link</label>
-                    <input class="lg" name="mirror" type="text" maxlength="100">
+                    <label for="gdrive" title="gdrive Link">Gdrive Link</label>
+                    <input class="lg" name="gdrive" type="text" maxlength="100">
 
 
 
