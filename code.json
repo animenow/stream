@@ -5,5 +5,12 @@
     "express": "latest",
     "fuse.js": "^2.5.0",
     "request": "latest"
+  },
+  "super-shiro-1x02": {
+    "1080p_MEGA": "https://google2.com",
+    "cheerio": "latest",
+    "express": "latest",
+    "fuse.js": "^2.5.0",
+    "request": "latest"
   }
 }
