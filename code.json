@@ -1,5 +1,6 @@
 {
-   "super-shiro-1x01":{
-      "1080p_MEGA":"https://google.com""1080p_Sharer":"https://google.com""1080p_Tot":"https://google.com""1080p_Mirror":"https://google.com""1080p_gd_id":"https://google.com""720p_MEGA":"https://google.com""720p_Sharer":"https://google.com""720p_Tot":"https://google.com""720p_Mirror":"https://google.com""720p_gd_id":"https://google.com""480p_MEGA":"https://google.com""480p_Sharer":"https://google.com""480p_Tot":"https://google.com""480p_Mirror":"https://google.com""480p_gd_id":"https://google.com"
-   }
-}
+  "super-shiro-1x01": [{
+    "1080p_MEGA": "https://google.com",
+    "720p_MEGA": "https://google.com",
+  }}
+ }
