@@ -1,6 +1,8 @@
 {
   "super-shiro-1x01": {
     "quality_version": "3",
+    "title": "Super Shiro - S01E01",
+    "1080p_MEGA": "latest",
     "1080p_Sharer": "latest",
     "1080p_Tot": "latest",
     "1080p_Mirror": "^2.5.0",
@@ -18,6 +20,7 @@
   },
   "super-shiro-1x02": {
     "quality_version": "3",
+    "title": "Super Shiro - S01E02",
     "1080p_MEGA": "https://google.com",
     "1080p_Sharer": "latest",
     "1080p_Tot": "latest",
