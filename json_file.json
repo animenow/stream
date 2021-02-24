@@ -1,16 +1,37 @@
 {
   "super-shiro-1x01": {
-    "1080p_MEGA": "https://google.com",
-    "cheerio": "latest",
-    "express": "latest",
-    "fuse.js": "^2.5.0",
-    "request": "latest"
+    "quality_version": "3",
+    "1080p_Sharer": "latest",
+    "1080p_Tot": "latest",
+    "1080p_Mirror": "^2.5.0",
+    "1080p_drive_id": "^2.5.0",
+    "720p_MEGA": "https://google.com",
+    "720p_Sharer": "latest",
+    "720p_Tot": "latest",
+    "720p_Mirror": "^2.5.0",
+    "720p_drive_id": "^2.5.0",
+    "480p_MEGA": "https://google.com",
+    "480p_Sharer": "latest",
+    "480p_Tot": "latest",
+    "480p_Mirror": "^2.5.0",
+    "480p_drive_id": "^2.5.0"
   },
   "super-shiro-1x02": {
-    "1080p_MEGA": "https://google2.com",
-    "cheerio": "latest",
-    "express": "latest",
-    "fuse.js": "^2.5.0",
-    "request": "latest"
+    "quality_version": "3",
+    "1080p_MEGA": "https://google.com",
+    "1080p_Sharer": "latest",
+    "1080p_Tot": "latest",
+    "1080p_Mirror": "^2.5.0",
+    "1080p_drive_id": "^2.5.0",
+    "720p_MEGA": "https://google.com",
+    "720p_Sharer": "latest",
+    "720p_Tot": "latest",
+    "720p_Mirror": "^2.5.0",
+    "720p_drive_id": "^2.5.0",
+    "480p_MEGA": "https://google.com",
+    "480p_Sharer": "latest",
+    "480p_Tot": "latest",
+    "480p_Mirror": "^2.5.0",
+    "480p_drive_id": "^2.5.0"
   }
 }
